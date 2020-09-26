@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>django接口开发</title>
+</head>
+<body>
+<h1>user login</h1>
+<a href="/index/">index</a>
+<form action="/login_action/" method="post">
+    username:<input type="text" name="username"/><br>
+    password:<input type="password" name="password"/><br>
+{# error 必须和views中的key相同  把后端的返回展现到前端   #}
+    <font color="#dc143c">{{error}}</font><br>
+    <button>确定</button>
+    {% csrf_token %}
+</form>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>django接口开发</title>
+</head>
+<body>
+<a href="/logout/">logout</a>
+<a>欢迎{{user}}</a>
+
+
+<h1>login success </h1>
+
+
+
+
+</body>
+</html>
+cookie  == 存折：存钱、取钱记录
+session == 银行卡：卡号（62121534645465） ------>  银行 500
+用户  -user/pawd----> 访问网站：需要login
+用户  <-------success----sessionid-----网站（sessionid存放在网站）
+登录成功后，用户（发送请求都会携带sessionid  时效30m）---->（网站）（sessionid）

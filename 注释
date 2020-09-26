@@ -1,0 +1,16 @@
+0.通过表单或链接
+<a href="/index/">index</a>
+1.指定路径
+http://127.0.0.1:8000/index/
+2.打开urls配置文件 setting.py
+ROOT_URLCONF = 'gest2.urls'
+3.urls.py 找到views
+path('index/',views.index)
+4.index 函数  return HttpResponse 对象
+
+
+cookie  == 存折：存钱、取钱记录
+session == 银行卡：卡号（62121534645465） ------>  银行 500
+用户  -user/pawd----> 访问网站：需要login
+用户  <-------success----sessionid-----网站（sessionid存放在网站）
+登录成功后，用户（发送请求都会携带sessionid  时效30m）---->（网站）（sessionid）
