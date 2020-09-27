@@ -14,3 +14,9 @@ session == 银行卡：卡号（62121534645465） ------>  银行 500
 用户  -user/pawd----> 访问网站：需要login
 用户  <-------success----sessionid-----网站（sessionid存放在网站）
 登录成功后，用户（发送请求都会携带sessionid  时效30m）---->（网站）（sessionid）
+
+
+mvt
+models.py  连接数据库
+views
+templates 页面

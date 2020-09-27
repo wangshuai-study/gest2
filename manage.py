@@ -12,7 +12,7 @@ ROOT_URLCONF = 'gest2.urls'
 3.urls.py 找到views
 path('index/',views.index)
 4.index 函数  return HttpResponse 对象'''
-
+# sessionid 7iq612wvg3nsd6g1dau6fw3yn4cixw2y
 def main():
     """Run administrative tasks."""
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'gest2.settings')
